@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <!-- la etiqueta <form> se utiliza como un contenedor para crear formularios -->
+    <!-- el parametro action se utiliza para inidcar el LINK a  donde enviar esa informacion -->
+    <!-- el parametro method se utiliza para inidcar como enviar esa informacion ((get) para enviarlo en el LINK o (post) par ocultar la informacion)-->
+    <!-- el parametro name se utiliza para inidcar el nombre del formulario -->
+    <!-- el parametro target se utiliza para inidcar donde abrir esa informacion (en la misma pestaña (_self) o en una aparte (_blank)) -->
+    <!-- el parametro encype se utiliza para la codificacion de esa informacion -->
+    <!-- el parametro accept-charset se utiliza para forzar la codificacion de esa informacion -->
+    <!-- el parametro autocomplete se utiliza para inidcar si se puede usar el outocompletado -->
+    <!-- el parametro novalidate se utiliza para desactivar la validacion de html5 -->
+    <form action="/send/" method="get" name="Informacion" target="_blank">
+        <span>Nombre:</span>
+
+        <!-- la etiqueta input sirve a ingresar la informacion -->
+        <!-- el parametro type sirve para indicar que tipo de informacion ingresar -->
+        <!-- el parametro name sirve para indicar el nombre de la casilla -->
+        <!-- el parametro autofocus sirve para seleccionar la acasilla indicada cuando carge la pagina -->
+        <!-- el parametro min y max length sirve para indicar la cantidad minima y maxima de caracteres que se puedemn ingresar en el input (5-20) -->
+        <!-- el input de tipo text sirve para ingresar texto corto -->
+        <input type="text" name="Nombre" autofocus minlength="5" maxlength="20">
+
+        <span>Edad:</span>
+
+        <!-- el parametro vaule sirve para poner un valor inicial en la casilla -->
+        <!-- el parametro size sirve para poner el tamaño de la casilla -->
+        <!-- el parametro min y max sirve para poner los numeros que se pueden usar (0-100) -->
+        <!-- el input de tipo number sirve para ingresar numeros -->
+        <input type="number" name="Edad" value="17" placeholder="12" size="4" min="0" max="100">
+
+        <br>
+        <span>Fecha de nacimiento:</span>
+
+        <!-- el input de tipo date sirve para ingresar fechas -->
+        <input type="date">
+
+        <span>Numero:</span>
+
+        <!-- el parametro placeholder sirve para poner un valor surgerido en la casilla -->
+        <!-- el parametro pattern sirve para indicar el patro que tiene que tener el valor del input para ser valido-->
+        <!-- el input de tipo tel sirve para ingresar un numero de telefono -->
+        <input type="tel" name="numero" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <br>
+        <span>Buscar:</span>
+
+        <!-- el input de tipo search sirve para buscar -->
+        <input type="search" name="Buscar" >
+
+        <span>Link:</span>
+
+        <!-- el input de tipo search sirve para ingresar el Link -->
+        <input type="url" name="Link" >
+
+        <br>
+        <span>Email:</span>
+
+        <!-- el input de tipo email sirve para ingresar el email -->
+        <input type="email" name="Email" >
+
+        <span>Contraseña:</span>
+
+        <!-- el input de tipo password sirve para ingresar la contraseña -->
+        <input type="password" name="Contrasena" >
+
+        <br>
+        <span>Esto esta oculto:</span>
+
+        <!-- el input de tipo oculto sirve para que la casilla no se muestre -->
+        <input type="hidden" name="Oculto" value="Hola">
+
+        <span>Comentarios:</span>
+
+        <!-- la etiqueta <textarea> sirve para ingresar texto largo-->
+        <textarea name="comenterio" id="5" cols="30" rows="10"></textarea>
+
+        <br>
+        
+        <p>ingresa tu genero:</p>
+
+        <!-- la etiqueta <label> sirve para conectar un elemento de seleccion con otro elemnto -->
+        <label>
+
+            <!-- el input tipo radio sirve para seleccionar elemtos, pero solo se puede seleccionar 1 a la vez -->
+            <input type="radio" name="genero" value="Hombre">Hombre
+        </label>
+        <label>
+            <input type="radio" name="genero" value="Mujer">Mujer
+        </label>
+        <label>
+            <input type="radio" name="genero" value="No_binario">No binario
+        </label>
+        <label>
+            <input type="radio" name="genero" value="Otro">Otro
+        </label>
+
+        <p>ingresa las materias que estudias</p>
+        <label>
+            <input type="checkbox" name="materia" value="Matematicas">Matematicas
+        </label>
+        <label>
+            <input type="checkbox" name="materia" value="Fisica">Fisica
+        </label>
+        <label>
+            <input type="checkbox" name="materia" value="Ingles">Ingles
+        </label>
+        <label>
+            <input type="checkbox" name="materia" value="Quimica">Quimica
+        </label>
+        <input type="submit">
+    </form>
+</body>
+</html>

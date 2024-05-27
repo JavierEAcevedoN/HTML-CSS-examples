@@ -1,0 +1,48 @@
+<!-- Instrucciones:  Crear un formulario de registro de usuario que cumpla con los siguientes requisitos:
+
+Título del Formulario: Debe tener un título claro y descriptivo, por ejemplo, "Formulario de Registro de Usuario".
+
+Campos del Formulario:
+
+    Nombre Completo: Un campo de texto para el nombre completo. Este campo es obligatorio.
+    Correo Electrónico: Un campo de entrada de tipo email. Este campo es obligatorio y debe ser validado.
+    Contraseña: Un campo de entrada de tipo password. La contraseña debe tener al menos 8 caracteres.
+    Confirmar Contraseña: Un campo de entrada de tipo password para confirmar la contraseña. 
+    Fecha de Nacimiento: Un campo de entrada de tipo date.
+    Género: Un conjunto de botones de radio para seleccionar el género (opciones: Masculino, Femenino, Otro).
+    Intereses: Un conjunto de casillas de verificación (checkboxes) para seleccionar intereses (opciones: Tecnología, Deportes, Música, Viajes).
+    País de Residencia: Un menú desplegable (select) con al menos 5 países.
+    Biografía: Un área de texto (textarea) donde el usuario pueda escribir una breve biografía.
+
+Botones:
+
+    Enviar: Un botón para enviar el formulario.
+
+Validaciones y Atributos Adicionales:
+
+    Todos los campos obligatorios deben estar marcados con el atributo required y con el tipo de dato adecuado.
+    Añade el atributo placeholder a los campos de texto para indicar qué tipo de información se espera.
+    No se permiten inscripciones a menores de edad -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form action="/datos.txt" target="_blank" method="get" name="Informacion_P">
+        Nombre Completo:<input type="text" name="Nombre_C" required pattern="[A-Z][a-z]{0,50} [A-Z][a-z]{0,50} [A-Z][a-z]{0,50} [A-Z][a-z]{0,50}" placeholder="(Nombre) (2ºNombre) (Apellido) (2ºApellido)" size="50">
+        <br>
+        <br>
+        Correo:<input type="email" name="Correo" required placeholder="example@gmail.com" size="30">
+        <br>
+        <br>
+        Contraseña:<input type="password" name="Contrasena" required placeholder="Contraseña" size="15" maxlength="20">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
