@@ -39,10 +39,69 @@ Validaciones y Atributos Adicionales:
         Correo:<input type="email" name="Correo" required placeholder="example@gmail.com" size="30">
         <br>
         <br>
-        Contraseña:<input type="password" name="Contrasena" required placeholder="Contraseña" size="15" maxlength="20">
+        Contraseña:<input type="password" name="Contrasena" required placeholder="Contraseña" size="15">
         <br>
         <br>
-        <input type="submit">
+        Confirmar contraseña:<input type="password" name="Contrasena" required placeholder="Confirmar contraseña" size="15">
+        <br>
+        <br>
+        Fecha de nacimiento:<input type="date" name="F_d_nacimiento" required>
+        <br>
+        <br>
+        Género:
+        <div>
+            <label>
+                <input type="radio" name="Genero" value="Hombre">
+                Hombre
+            </label>
+            <label>
+                <input type="radio" name="Genero" value="Mujer">
+                Mujer
+            </label>
+            <label>
+                <input type="radio" name="Genero" value="Otro" required>
+                Otro
+            </label>
+        </div>
+        <br>
+        Intereses:
+        <br>
+        <div>
+            <label>
+                <input type="checkbox" name="Intereses" value="Tecnologia">
+                Tecnología
+            </label>
+            <label>
+                <input type="checkbox" name="Intereses" value="Deportes">
+                Deportes
+            </label>
+            <label>
+                <input type="checkbox" name="Intereses" value="Musica">
+                Música
+            </label>
+                <input type="checkbox" name="Intereses" value="Viajes">
+                Viajes
+            </label>
+        </div>
+        <br>
+        País:
+        <br>
+        <select name="Pais" title="País" required>
+                <option vaule="Colombia">Colombia</option>
+                <option vaule="Estados_Unidos">Estados Unidos</option>
+                <option vaule="Espana">España</option>
+                <option vaule="Mexico">México</option>
+                <option vaule="Argentina">Argentina</option>
+        </select>
+        <br>
+        <br>
+        Biografía:
+        <br>
+        <textarea name="Biografia" required placeholder="Pon aqui tu biografia"></textarea>
+        <br>
+        <br>
+        <input type="submit" title="Enviar">
+        <input type="reset" title="Borrar">
     </form>
 </body>
 </html>
