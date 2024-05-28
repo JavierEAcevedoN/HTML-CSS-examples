@@ -1,0 +1,79 @@
+<!-- Crear una página web que represente un perfil personal con la siguiente estructura y aplícale estilos CSS siguiendo los requisitos especificados.
+
+Estructura HTML:
+
+    Encabezado (<header>): Contiene un título (<h1>) con el nombre de la persona y una imagen de perfil (<img class="imagen">).
+    Barra de Navegación (<nav>): Contiene una lista (<ul>) de tres enlaces (<li><a class="link">): "Inicio", "Sobre Mí" y "Contacto".
+    Sección Principal (<main>): Incluye una sección de presentación (<section id="presentacion">) con un subtítulo (<h2 class="subtitulo">) y un párrafo (<p class="texto">). Y también una sección de hobbies (<section class="hobbies">) con un subtítulo (<h2 class="subtitulo">) y una lista de hobbies (<ul><li>).
+    Pie de Página (<footer>): Contiene un texto de copyright.
+
+Requisitos de Estilos CSS
+
+    Variables CSS: Define variables para los colores principales, secundarios, y para la fuente.
+    Selectores de Elementos: Aplica estilos básicos a los elementos HTML como body, h1, h2, p, a, img.
+    Selectores de Clase e ID: Utiliza clases para los estilos de las secciones y un id para la sección de presentación.
+    Cascada y Herencia: Aplica estilos que demuestren la cascada y la herencia, resolviendo cualquier ambigüedad. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil personal</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo_pricipal">Javier Eduardo Acevedo Noguera</h1>
+        <img class="imagen" src="https://avatars.githubusercontent.com/u/166556314?v=4" alt="foto de perfil github">
+    </header>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a class="link" href="#presentacion">Inicio</a></li>
+            <li><a class="link" href="#hobbies">Sobre Mí</a></li>
+            <li><a class="link" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="presentacion">
+            <h2 class="subtitulo">Presentacion</h2>
+            <p class="texto">
+                Hola, mi nombre es Javier Eduardo Acevedo Noguera soy graduado de secundaria, soy bueno en matematicas y fisica, tengo buena logica de programacion, en mis tiempos libres juego videojuegos y veo television, tambien se cocinar.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="hobbies">
+            <h2 class="subtitulo">Hobbies</h2>
+            <ul>
+                <li>Jugar</li>
+                <li>Ver TV</li>
+                <li>Cocinar</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contacto">
+            <h2 class="subtitulo">Contacto</h2>
+            <a class="link" href="https://github.com/JavierEAcevedoN" target="_blank">
+                <img class="imagen" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+            </a>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p class="texto">
+            toda la informacion que aparece aqui tiene copyright © 2024-2024
+        </p>
+    </footer>
+</body>
+</html>

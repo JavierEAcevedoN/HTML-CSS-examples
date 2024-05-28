@@ -1,0 +1,33 @@
+:root{
+    --color1:#352a63;
+    --color2:#00224D;
+    --fondo:#866dca;
+    --fuente:#5D0E41;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+#titulo_pricipal{
+    color: var(--color1);
+}
+
+.subtitulo{
+    color: var(--color2);
+}
+
+li, .texto{
+    color: var(--fuente);
+}
+
+.link{
+    color: var(--fuente);
+}
+
+.imagen{
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid var(--fuente);
+    background-color: white;
+}

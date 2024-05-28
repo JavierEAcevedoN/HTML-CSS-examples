@@ -1,0 +1,18 @@
+:root{
+    --color1:green
+    /* el valor que inicia con -- significa que se puede usar como una variable para almecenar valores */
+}
+
+h2{
+    color: var(--color1);
+}
+
+/* para identificar el parametro de class se utiliza un . seguido del nombre que le puso */
+.a2{
+    color: purple;
+}
+
+/* para identificar el parametro de id se utiliza un # seguido del nombre que le puso */
+#s1{
+    color: orange;
+}

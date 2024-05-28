@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- se puede usar la etiqueta style para poner stilos para elementos en general -->
+    <style>
+        h2{
+            color: yellow;
+        }
+        </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>
+        css es un archvo que se utiliza para dar stylos y personalizacion a las paginas web
+    </p>
+
+    <!-- un modo de poner stylos es con el parametro <style> -->
+    <!-- para los elementos que tengan un parametro style, sobreescribe la etiqueta general -->
+    <h2 style="color: red;">Este es un titulo h2 con un parametro style</h2>
+    <h2 style="color: blue;">Este es otro titulo h2 con un parametro style</h2>
+
+    <!-- pero como estos elemtos no tienen parametro style, agarran el estilo de la etiqueta general -->
+    <h2>Este es un titulo h2 sin parametro</h2>
+    <h2>Este es otro titulo h2 sin parametro</h2>
+
+    <!-- y el ultimo modo de poner estilos a los elementos es, usan css -->
+    <!-- el parametro class sirve para identificar un grupo de elementos -->
+    <h2 class="a2">Este es un titulo h2 con un parametro class</h2>
+    <h2 class="a2">Este es otro titulo h2 con un parametro class</h2>
+    
+    <!-- el parametro id sirve para identificar un elemento -->
+    <h2 id="s1">Este es un titulo h2 con un parametro id</h2>
+</body>
+</html>
