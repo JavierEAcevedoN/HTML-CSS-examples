@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(245deg,black, darkcyan, darkorange);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+h1,h2{
+    color: darkblue;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+header img{
+    height: 7cm;
+}
+
+a{
+    color: darkblue;
+}
+
+p{
+    text-align: justify;
+}

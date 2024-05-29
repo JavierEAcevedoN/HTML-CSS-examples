@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Que es un DDoS?</h1>
+        <img src="https://latam.kaspersky.com/content/es-mx/images/repository/isc/2017-images/malware-img-20.jpg" alt="security">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Que-son">Que son?</a></li>
+            <li><a href="#Como-funciona">Como funciona</a></li>
+            <li><a href="#Como-evitarlos">Como evitarlos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Que-son">
+            <h2>Que son los ataques DDoS?</h2>
+            <p>
+                Los ataques de red distribuidos a menudo se conocen como ataques de denegación distribuida de servicio (DDoS). Este tipo de ataque aprovecha los límites de capacidad específicos que se aplican a cualquier recurso de red, tal como la infraestructura que habilita el sitio web de la empresa. El ataque DDoS envía varias solicitudes al recurso web atacado, con la intención de desbordar la capacidad del sitio web para administrar varias solicitudes y de evitar que este funcione correctamente.
+            </p>
+            <p>
+                Entre los objetivos más comunes de los ataques DDoS se incluyen:
+            </p>
+            <ul>
+                <li>Sitios de compra por Internet</li>
+                <li>Casinos en línea</li>
+                <li>Cualquier empresa u organización que dependa de la prestación de servicios en línea.</li>
+            </ul>
+        </section>
+        <section id="Como-funciona">
+            <h2>Como funciona un ataque DDoS</h2>
+            <p>
+                Los recursos de red (tales como los servidores web) tienen un límite finito de solicitudes que pueden atender al mismo tiempo. Además del límite de capacidad del servidor, el canal que conecta el servidor a Internet tiene un ancho de banda o capacidad limitados. Cuando la cantidad de solicitudes sobrepasa los límites de capacidad de cualquiera de los componentes de la infraestructura, el nivel de servicio probablemente se vea afectado de alguna de las siguientes maneras:
+            </p>
+            <ul>
+                <li>La respuesta a las solicitudes será mucho más lenta de lo normal.</li>
+                <li>Es posible que se ignoren algunas (o todas) las solicitudes de los usuarios.</li>
+            </ul>
+            <p>
+                Por regla general, la intención primordial del atacante es evitar por completo el funcionamiento normal del recurso web, una "denegación" total del servicio. El atacante también puede solicitar un pago para detener el ataque. En algunos casos, el objetivo del ataque DDoS puede ser desacreditar o dañar el negocio de un competidor.
+            </p>
+        </section>
+        <section id="Como-evitarlos">
+            <h2>Como evitar un ataque DDoS</h2>
+            <ul>
+                <li>
+                    <h3>Reduzca la superficie expuesta a ataques</h3>
+                    <p>
+                        Una de las primeras técnicas para mitigar los ataques DDoS es minimizar la superficie del área que puede ser atacada y por lo tanto, limitar las opciones de los atacantes lo que permite construir protecciones en un solo lugar. Queremos asegurarnos de no exponer nuestra aplicación o nuestros recursos a los puertos, protocolos o aplicaciones de donde no esperan ninguna comunicación. Por lo tanto, minimizar los posibles puntos de ataque nos permite concentrar nuestros esfuerzos para mitigarlos. En algunos casos, podemos hacerlo si colocamos nuestros recursos informáticos por detrás de las <b>Redes de distribución de contenido (CDNs)</b> o Balanceadores de carga y restringir el tráfico directo de Internet a ciertas partes de nuestra infraestructura, como los servidores de bases de datos. En otros casos, puede utilizar firewalls o <b>listas de control de acceso (ACLs)</b> para controlar qué tráfico llega a las aplicaciones.
+                    </p>
+                </li>
+                <li>
+                    <h3>Plan para escalado </h3>
+                    <p>
+                        Existen dos consideraciones claves para mitigar ataques DDoS volumétricos de gran escala, la capacidad del ancho de banda (o tránsito) y la capacidad del servidor de absorber y mitigar los ataques.
+                    </p>
+                    <p>
+                        <u>Capacidad de tránsito.</u> Cuando diseñe sus aplicaciones, asegúrese que su proveedor de alojamiento le brinde conectividad a Internet amplia y redundante para administrar grandes volúmenes de tráfico. Dado que el objetivo final de los ataques DDoS es afectar la disponibilidad de sus recursos/aplicaciones, debe ubicarlos, no solo cerca de sus usuarios finales, sino también de los grandes intercambios de Internet que brindarán a sus usuarios un acceso fácil a su aplicación, incluso durante grandes volúmenes de tráfico. Además, las aplicaciones web pueden ir un paso más allá si emplean redes de distribución de contenido (CDN) y <b>servicios inteligentes de resolución de DNS</b> que proporcionan una capa adicional de infraestructura de red para servir contenido y resolver consultas DNS desde ubicaciones que a menudo están más cerca de sus usuarios finales.
+                    </p>
+                    <p>
+                        <u>Capacidad del servidor.</u> La mayoría de los ataques DDoS son ataques volumétricos que utilizan muchos recursos. Por lo tanto, es importante que pueda escalar rápidamente sus recursos de computación. Puede hacerlo con la ejecución de recursos informáticos más grandes o aquellos con características como <b>interfaces de red más extensas</b> o <b>redes mejoradas</b> que admitan volúmenes más grandes. Además, también es común usar balanceadores de carga para monitorear y cambiar cargas continuamente entre recursos para evitar sobrecargar cualquier recurso.
+                    </p>
+                </li>
+                <li>
+                    <h3>Conozca qué es el tráfico normal y anormal</h3>
+                    <p>
+                        Cada vez que detectamos niveles elevados de tráfico que golpean a un host, la base es poder aceptar solo el tráfico que nuestro host pueda manejar sin afectar la disponibilidad. Este concepto se llama limitación de velocidad. Las técnicas de protección más avanzadas pueden ir un paso más allá y solo aceptan de manera inteligente el tráfico que es legítimo cuando se analizan los paquetes individuales. Para hacer esto, debe comprender las características del buen tráfico que generalmente recibe el objetivo y poder comparar cada paquete con esta línea de base.
+                    </p>
+                </li>
+                <li>
+                    <h3>Implemente firewalls para ataques sofisticados de aplicaciones</h3>
+                    <p>
+                        Una buena práctica es utilizar un <b>Firewall de aplicaciones web (WAF)</b> contra ataques, como la inyección SQL o la falsificación de solicitudes entre sitios, que intentan aprovechar una vulnerabilidad en su propia aplicación. Además, debido a la naturaleza única de estos ataques, debería poder crear fácilmente mitigaciones personalizadas contra solicitudes ilegítimas que podrían tener características como disfrazarse de <b>buen tráfico</b> o provenir de direcciones IP incorrectas, geografías inesperadas, etc. A veces también puede ser útil para mitigar los ataques, ya que pueden obtener un soporte experimentado para estudiar los patrones de tráfico y crear protecciones personalizadas.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <u>
+                Toda la informacion que aparece aqui tiene copyright © 2024-2024
+            </u>
+        </p>
+    </footer>
+</body>
+</html>

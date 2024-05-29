@@ -1,0 +1,50 @@
+#color{
+    /* el parametro color sirve para poner el color al contenido del elemento */
+    color: white;
+
+    /* el parametro backgrond-color sirve para poner el color del relleno del elemento*/
+    background-color: black;
+
+    /* los colores se pueden de tres modos */
+    /* el primero es con RGB */
+    --rgb:rgb(255, 0, 0);
+
+    /* el segundo es con hexagecimal */
+    --hex:#720101;
+
+    /* y el tercero es con hsl */
+    --hsl:hsl(152, 66%, 45%);
+}
+
+#imagen{
+    /* el parametro background-image sirve para poner una imagen como relleno para el elemento */
+    background-image: url(https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg);
+
+    /* el parametro background-repeat sirve para indicar como se va a repetir la imagen de relleno */
+    background-repeat: round;
+
+    /* el parametro background-posision sirve para indicar donde ubicar la imagen de fondo */
+    background-position: 50%;
+
+    /* el parametro backgroun-size sirve para indicar le tamaño de la imagen */
+    background-size: 300px;
+
+    /* el parametro opacity sirve para indicar la tranparencia de la imagen */
+    opacity: 45%;
+}
+
+#gradiante-lineal{
+    /* en el background-image se puede usar gradient para hacer gradiantes */
+    /* el linear-gradient sirve para hacer gradiantes lineales */
+    background-image: linear-gradient(to right,red,65%, blue,yellow);
+}
+
+#gradiante-radial{
+    /* el radial-gradient sirve para hacer gradiantes circulares*/
+    background-image: radial-gradient(circle,purple,10%, orange,43%,green);
+}
+
+#gradiente-conica{
+    /* el conic-gradient sirve para hacer gradiantes conicas**/
+    background-image: conic-gradient(black,65%, gray,white);
+}
