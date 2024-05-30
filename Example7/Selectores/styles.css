@@ -1,0 +1,97 @@
+/* un modo de seleccionar elementos es el general */
+
+a{
+    color: green;
+}
+
+/* otro modo de seleccionar elementos es con el parametro que tienen */
+a[href]{
+    color: orange;
+}
+
+/* otro modo es con el parametro y valor */
+a[href="profile.html"]{
+    color: red;
+}
+
+/* otro modo es indicar el elemento la id y los elementos dentro de este */
+
+div#div1 p{
+    color: blue;
+}
+#div1{
+    border: 1px solid black;
+}
+
+/* otro modo es indicar el elemento hijo directo de otro elemento, esto sirve para modificar los elementos que son hijos directos del primer elemento */
+div#div2 > div{
+    color: green;
+}
+#div2{
+    border: 1px solid black;
+}
+
+/* otro modo es indicar el elemento seguido de otro elemento indicado */
+div#div3 > div + p{
+    color: brown;
+}
+
+#div3 {
+    border: 1px solid black;
+}
+
+/* otro modo es indicar el elemento que sea hermano pero sin necesariamanete estar seguido del elemento indicado*/
+div#div4 > div ~ p{
+    color: purple;
+}
+
+#div4{
+    border: 1px solid black;
+}
+
+/* otro modo es indicar todos los elementos dentro del elemento seleccionado */
+div#div5 *{
+    color: orangered;
+}
+
+#div5{
+    border: 1px solid black;
+}
+
+/* hay un modo de poner el mismo estilo a varios elementois distintos a la ves */
+h1,h2,h3{
+    color: darkkhaki;
+}
+
+/* :hover sirve para aplicar el estilo cuando pasas el cursor por encima*/
+:hover p#p1{
+    color: red;
+    font-size: 20PX;
+}
+
+/* :hover sirve para aplicar el estilo cuando pasas le das click con  el cursor*/
+:active p#p1{
+    font-size: 30px;
+}
+
+
+/* la metodologia BEM es un enfoque de nomenclatura de clases que ayuda a organizar el codigo de manera mas clara */
+/* esta es le dacoracion B (block) */
+.boton{
+    color: blue;
+    font-size: 30px;
+}
+
+/* esta es la decoracion E (element) */
+.boton__icono{
+    color: red;
+}
+
+.boton__texto{
+    color: orange;
+}
+
+/* esta es la decoracion M (modifier) */
+.boton--primario{
+    color: purple;
+}
