@@ -1,7 +1,41 @@
-#contenidoPricipal_categorias table td {
-    border: 1px solid red;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
-#contenidoPricipal_categorias table img{
-    width: 200px;
+h1{
+    color:  firebrick;
+}
+
+.encabezado_navegacion a, #contenidoPricipal_destacado a{
+    color: midnightblue;
+    text-decoration: none;
+    margin: 1.5%;
+    padding: 10px;
+    border-radius: 8%;
+    background-color: sienna;
+}
+
+h2{
+    color: salmon;
+}
+
+h3{
+    color: orange;
+}
+
+#contenidoPricipal_categorias  table img{
+    height: 300px;
+}
+
+#contenidoPricipal_destacado p#descripcion{
+    text-align: justify;
+}
+
+#pieDePagina_redesSociales img{
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
 }
