@@ -1,0 +1,7 @@
+#contenidoPricipal_categorias table td {
+    border: 1px solid red;
+}
+
+#contenidoPricipal_categorias table img{
+    width: 200px;
+}
