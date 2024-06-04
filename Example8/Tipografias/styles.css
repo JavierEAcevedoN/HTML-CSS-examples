@@ -1,0 +1,53 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+p#p1{
+    /* el parametro font-family sirve para indicar la fuente de letra a un texto, pero tambien sirve por si acaso una fuente de letra no carga se use la siguiente */
+    font-family: 'Courier New', Courier, monospace,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,'Times New Roman', Times, serif;
+}
+
+p#p2{
+    /* font-size sirve para indicar el tamaño del texto */
+    font-size: 100px;
+}
+
+p#p3{
+    /* font-style sirve para poner el estilo de la letra en este caso cursiva */
+    font-style: italic;
+}
+
+p#p4{
+    /* font-weight sirve para indicar la negrilla de la letra */
+    font-weight: bold;
+}
+
+p#p5{
+    /* text-align sirve para indicar como alinear el texto en el espacio */
+    text-align: center;
+}
+
+p#p6{
+    /* letter-spacing sirve para poner el espacio entre las letras */
+    letter-spacing: 10px;
+
+    /* word-spacing sirve para poner el espacio entre las palabras */
+    word-spacing: 20px;
+
+    /* line-height sirve para poner el interlineado del texto */
+    line-height: 100px;
+
+    /* text-indent sirve para poner la indentacion del texto */
+    text-indent: 100px;
+}
+
+p#p7{
+    /* sirve para poner la decoracion al texto, en este caso linea tachada */
+    text-decoration: line-through;
+}
+
+p#p8{
+    /* transform sirve para transformar el contenido del texto */
+    text-transform: uppercase;
+}

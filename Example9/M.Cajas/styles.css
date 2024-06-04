@@ -1,0 +1,17 @@
+div#div1{
+    width: 45px;
+    background-color: red;
+    /* el padding es el relleno entre el contenido y el borde */
+    padding: 10px;
+    /* el margin es el borde externo del elemento */
+    margin: 10px;
+    /* el borde visible del elemento */
+    border: 10px solid;
+}
+
+div#div2{
+    width: 200px;
+    background-color: red;
+    /* el parametro overflow sirve para indicar que hacer cuando el contenido de un elemento se desborda */
+    overflow: scroll;
+}
