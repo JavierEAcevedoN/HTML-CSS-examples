@@ -1,0 +1,43 @@
+.div1{
+    /* es la cantidad de tamaño medido por los pixeles de la pantalla */
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}
+
+.div2{
+    /* el tamaño depende del tamaño del contenedor padre */
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+}
+
+.div3{
+    /* el tamaño depende del tamaño de fuente de texto del contenedor */
+    font-size: 20px;
+    height: 1em;
+    width: 1em;
+    background-color: orange;
+}
+
+.div4{
+    /* el tamaño depende del tamaño de fuente de texto del elemento raiz (html) */
+    font-size: 100px;
+    height: 1rem;
+    width: 1rem;
+    background-color: blue;
+}
+
+.div5{
+    /* el tamaño depende de tamaño de la region visible del navegador */
+    height: 50vw;
+    width: 50vw;
+    background-color: green;
+}
+
+.div6{
+    /* el tamaño depende de tamaño de la x de la tipografia que se esta usando */
+    height: 3ex;
+    width: 3ex;
+    background-color: purple;
+}
