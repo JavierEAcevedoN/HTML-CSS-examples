@@ -1,0 +1,187 @@
+div.father1{
+    width: 90px;
+    display: block;
+}
+div.div1{
+    background-color: red;
+}
+div.div2{
+    background-color: blue;
+}
+div.div3{
+    background-color: yellowgreen;
+}
+div.father2{
+    width: 90px;
+    display: inline;
+}
+div.div4{
+    background-color: yellow;
+}
+div.div5{
+    background-color: orange;
+}
+div.div6{
+    background-color: orangered;
+}
+div.father3{
+    position: relative;
+    left: 100px;
+    width: 90px;
+}
+div.div7{
+    background-color: purple;
+}
+div.div8{
+    background-color: blueviolet;
+}
+div.div9{
+    background-color: palegreen;
+}
+div.father4{
+    position: absolute;
+    left: 100px;
+    width: 90px;
+}
+div.div10{
+    background-color: brown;
+}
+div.div11{
+    background-color: aqua;
+}
+div.div12{
+    background-color: crimson;
+}
+div.father5{
+    position: fixed;
+    right: 10px;
+    width: 90px;
+}
+div.div13{
+    background-color: violet;
+}
+div.div14{
+    background-color: tomato;
+}
+div.div15{
+    background-color: slateblue;
+}
+div.father6{
+    position: sticky;
+    top: 10px;
+    width: 90px;
+}
+div.div16{
+    background-color: cyan;
+}
+div.div17{
+    background-color: rebeccapurple;
+}
+div.div18{
+    background-color: darkmagenta;
+}
+div.father7{
+    top: 1000px;
+    width: 90px;
+}
+div.div19{
+    background-color: deeppink;
+}
+div.div20{
+    background-color: gold;
+}
+div.div21{
+    background-color: forestgreen;
+}
+div.father8{
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+}
+div.div22{
+    background-color: pink;
+}
+div.div23{
+    background-color: aquamarine;
+}
+div.div24{
+    background-color: goldenrod;
+}
+div.father9{
+    display: flex;
+    width: 100px;
+    flex-direction: column-reverse;
+}
+div.father10{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+}
+div.father11{
+    display: flex;
+    height: 100px;
+    flex-direction: row-reverse;
+}
+div.father12{
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    background-color: midnightblue;
+    flex-direction: row;
+}
+div.div25{
+    background-color: darkslategray;
+}
+div.div26{
+    background-color: honeydew;
+}
+div.div27{
+    background-color: mediumvioletred;
+}
+div.father13{
+    display: flex;
+    height: 500px;
+    flex-wrap: nowrap;
+    background-color: firebrick;
+    flex-direction: row;
+}
+div.div28{
+    background-color: darkgrey;
+}
+div.div29{
+    background-color: darkseagreen;
+}
+div.div30{
+    background-color: lime;
+}
+div.father14{
+    display: flex;
+    height: 500px;
+    background-color: firebrick;
+    flex-direction: row;
+    justify-content: center;
+}
+div.div31{
+    background-color: darkgrey;
+}
+div.div32{
+    background-color: darkseagreen;
+}
+div.div33{
+    background-color: lime;
+}
+div.father15{
+    display: flex;
+    height: 500px;
+    background-color: firebrick;
+    flex-direction: row;
+    align-items: center;
+}
+div.father16{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    background-color: firebrick;
+    flex-direction: row;
+    align-content: center;
+}

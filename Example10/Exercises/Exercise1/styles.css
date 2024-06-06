@@ -30,9 +30,18 @@ main{
     background-repeat: no-repeat;
     position: absolute;
 }
-section.contenido{
+main div.encabezado{
+    position: relative;
+    margin: 10px;
+    width: 207px;
+    left: 70vw;
+}
+main div.encabezado button{
+    text-transform: uppercase;
+}
+main section.contenido{
     border-radius: 10px;
     height: 95%;
-    margin: 100px;
+    margin: 40px;
     background-color: white;
 }
