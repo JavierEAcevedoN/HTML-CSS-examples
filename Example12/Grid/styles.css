@@ -1,0 +1,55 @@
+div.father1{
+    display: grid;
+    /* el parametro grid template columns sirve para indicar cuanto y que tan grandes son las columnas */
+    /* fr sirve para dividir el espacio disponible del contenedor */
+    grid-template-columns: 1fr 2fr 3fr;
+
+    /* el parametro grid template rows sirve para indicar cuanto y que tan grandes son las filas */
+    grid-template-rows: 1fr 2fr 3fr 4fr;
+
+    /* espaciado entre cada columna */
+    column-gap: 10px; 
+    
+    /* espaciado entre cada fila */
+    row-gap: 10px;
+
+    background-color: gray;
+}
+div.div1{
+    background-color: red;
+}
+div.div2{
+    background-color: blue;
+}
+div.div3{
+    background-color: yellowgreen;
+}
+div.div4{
+    background-color: orange;
+}
+div.father2{
+    display: grid;
+
+    /* sirve para ubicar los elementos por medio de nombres */
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c c"
+    "d d d";
+}
+div.div5{
+    background-color: blueviolet;
+    grid-area: "a";
+}
+div.div6{
+    background-color: brown;
+    grid-area: "b";
+}
+div.div7{
+    background-color: crimson;
+    grid-area: "c";
+}
+div.div8{
+    background-color: darkorange;
+    grid-area: "d";
+}

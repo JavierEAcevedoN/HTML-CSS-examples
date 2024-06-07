@@ -1,5 +1,13 @@
 body{
     margin: 0px;
+    background-image: url(./resources/img/Fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100vw;
+    height: 1900px;
+    --link-color: #976f01;
+    --number-list-color:rgb(58,58,58);
 }
 header{
     background-color: black;
@@ -22,26 +30,35 @@ header div{
     font-family: rubik,helvetica,arial,sans-serif;
 }
 main{
-    background-size: cover;
-    background-position: 50%;
-    width: 100vw;
-    height: 1000px;
-    background-image: url(./resources/img/Fondo.webp);
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+
     position: absolute;
 }
 main div.encabezado{
-    position: relative;
-    margin: 10px;
-    width: 207px;
-    left: 70vw;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 40px;
 }
 main div.encabezado button{
     text-transform: uppercase;
 }
 main section.contenido{
     border-radius: 10px;
-    height: 95%;
-    margin: 40px;
+    height: 1500px;
+    margin: 15px 40px;
     background-color: white;
+    overflow-y: scroll;
+}
+li{
+    color: var(--number-list-color);
+}
+a{
+    color: var(--link-color);
+}
+main section.contenido nav.secciones,
+main section.contenido article#informacion,
+main section.contenido article#informacion > *{
+    border: 2px solid black;
 }
