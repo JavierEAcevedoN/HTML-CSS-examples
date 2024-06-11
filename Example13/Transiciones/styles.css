@@ -1,0 +1,67 @@
+div.element1{
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    background-color: orangered;
+    color: yellowgreen;
+
+    /* el parametro de transition-duration sirve para poner la duracion de la trancicion y tambien la activa */
+    transition-duration: 4s;
+}
+div.element1:hover{
+    width: 600px;
+    height: 600px;
+    background-color: yellowgreen;
+    color: orangered;
+}
+div.element2{
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    background-color: blueviolet;
+    color: yellow;
+    transition-duration: 4s;
+
+    /* el parametro de transition-property sirve para indicar a que elementos asignarle la transicion */
+    transition-property: width,height;
+}
+div.element2:hover{
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    color: blueviolet;
+}
+div.element3{
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    background-color: red;
+    color: blue;
+    transition-duration: 4s;
+
+    /* el parametro de transition-delay sirve para indicar cuanto esperar para que enpiese la trancicion */
+    transition-delay: 2s;
+}
+div.element3:hover{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    color: red;
+}
+div.element4{
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    background-color: aqua;
+    color: gray;
+    transition-duration: 4s;
+
+    /* el parametro de transition-timing-function sirve para indicar la velocidad de la transicion */
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+div.element4:hover{
+    width: 600px;
+    height: 600px;
+    background-color: gray;
+    color: aqua;
+}

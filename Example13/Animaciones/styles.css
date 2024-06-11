@@ -1,0 +1,64 @@
+@keyframes cambiar-color {
+    /* el parametro from es para indicar el principio de la animacion */
+    from {background-color: orange;}
+
+    /* el parametro to es para indicar el final de la animcion */
+    to {background-color: purple;}
+}
+@keyframes cambiar-tamaño {
+    /* el porcentaje sirve para indicar que hacer en ese momento de la anicacion */
+    0% {background-color: yellow;}
+    50% {
+        background-color: blue;
+        width: 600px;
+        height: 600px;
+    }
+    100% {background-color: red;}
+}
+@keyframes animacion1 {
+    0% {rotate: 360deg;}
+    50% {
+        width: 700px;
+        height: 700px;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+    }
+}
+@keyframes animacion2 {
+    0% {border-radius: 50%;}
+    50% {border-radius: 0%;}
+    100% {border-radius: 50%;}
+}
+div.element1{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    animation: cambiar-color 2s linear 0s infinite;
+}
+div.element2{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    animation: cambiar-tamaño 2s linear 0s infinite;
+}
+div.element3{
+    width: 300px;
+    height: 300px;
+    background-color: cyan;
+    animation: animacion1 10s linear 0s infinite;
+}
+div.element4{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: purple;
+    animation: animacion2 5s linear 0s infinite;
+}
+div.element5{
+    width: 300px;
+    height: 300px;
+    background-color: orangered;
+    animation: animacion1 5s linear 0s infinite, animacion2 1s linear 0s infinite;
+}

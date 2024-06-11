@@ -6,6 +6,7 @@ body{
     background-position: 50%;
     width: 100vw;
     height: 1900px;
+    font-family: rubik,helvetica,arial,sans-serif;
     --link-color: #976f01;
     --number-list-color:rgb(58,58,58);
 }
@@ -45,11 +46,22 @@ main div.encabezado button{
     text-transform: uppercase;
 }
 main section.contenido{
+    padding: 20px;
     border-radius: 10px;
     height: 1500px;
     margin: 15px 40px;
     background-color: white;
     overflow-y: scroll;
+}
+main section.contenido h1{
+    font-size: 40px;
+    text-align: center;
+}
+.negrilla{
+    font-weight: bold;
+}
+main section.contenido #descripcion p.espace{
+    padding-left: 20px;
 }
 li{
     color: var(--number-list-color);
@@ -57,8 +69,25 @@ li{
 a{
     color: var(--link-color);
 }
-main section.contenido nav.secciones,
-main section.contenido article#informacion,
-main section.contenido article#informacion > *{
-    border: 2px solid black;
+main section.contenido nav.secciones{
+    border: 2px groove gray;
+    width: 300px;
+}
+main section.contenido article#informacion{
+    border: 2px groove gray;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+main section.contenido article#informacion h2,
+main section.contenido article#informacion h3{
+    text-align: center;
+}
+main section.contenido article#informacion div{
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 4px;
+}
+main section.contenido article#informacion div ul{
+    margin: 0px;
 }
